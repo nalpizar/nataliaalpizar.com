@@ -13,6 +13,7 @@ function App() {
         <h2>About Me</h2>
         <p>
           I am a Frontend Engineer with a passion for designing...
+          Pipeline testing, and deployment. I am a quick learner and a team player.
         </p>
       </section>
 
