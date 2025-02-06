@@ -4,43 +4,24 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="header-section">
+      {/* <header className="header-section">
         <h1>Natalia Alpizar</h1>
         <h3>Frontend Engineer</h3>
-      </header>
+      </header> */}
 
       <section className="about-section">
-        <h2>About Me</h2>
-        <p>
-          I am a Frontend Engineer with a passion for designing...
-          Pipeline testing, and deployment. I am a quick learner and a team player.
-        </p>
-      </section>
+          <div className="profile-image">
+              <h1>Hi, I'm Natalia<span className='big'>.</span></h1>
+        
+              <h2>I'm a <span>Frontend Engineer</span></h2>
 
-      <section className="skills-section">
-        <h2>Skills</h2>
-        <ul>
-          <li>Skill-1</li>
-          <li>Skill-2</li>
-        </ul>
+              <p>
+                With 10 years of experience in creating user-centric, responsive,
+                and visually engaging interfaces. I specialize in building intuitive websites and
+                applications that prioritize performance, accessibility, and responsiveness. Currently based in Berlin.
+              </p>
+          </div>
       </section>
-
-      <section className="projects-section">
-        <h2>Projects</h2>
-        <div className="project">
-          <h3>Project 1</h3>
-          <p>
-            Description
-          </p>
-        </div>
-        <div className="project">
-          <h3>Project 2</h3>
-          <p>
-            Description
-          </p>
-        </div>
-      </section>
-
       <footer className="footer-section">
         <p>© 2025 Natalia Alpizar | <a href="mailto:natalpizarm@gmail.com">natalpizarm@gmail.com</a></p>
       </footer>
