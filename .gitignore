@@ -11,6 +11,7 @@
 # production
 /build
 /dist
+.prettierrc
 
 # misc
 .DS_Store
