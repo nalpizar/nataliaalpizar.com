@@ -1,43 +1,46 @@
-.App {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  color: #333;
+html {
+  background-color: #fff6ed;
 }
 
-.header-section {
-  background: #282c34;
-  color: #fff;
-  text-align: center;
-  padding: 2rem 0;
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
 }
 
-.header-section h1 {
-  margin: 0;
-  font-size: 3rem;
+h1, h2, p {
+  color: #184027;
+  margin: 16px 0;
 }
 
-.header-section h3 {
-  margin-top: 0.5rem;
+p {
+  line-height: 26px;
+}
+
+h2 {
   font-weight: 400;
+  font-size: 2rem;
 }
 
-.about-section, .skills-section, .projects-section {
-  padding: 2rem;
+h2 span {
+  font-weight: 800;
 }
 
-.projects-section .project {
-  margin-bottom: 1.5rem;
+span {
+  color: #ed6b2e
 }
 
-.footer-section {
-  text-align: center;
-  background: #f3f3f3;
-  padding: 1rem 0;
-  margin-top: 2rem;
+.about-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer-section a {
-  color: #0066cc;
-  text-decoration: none;
+.profile-image {
+  width: 60%;
+}
+
+.big {
+  font-size: 4rem;
 }

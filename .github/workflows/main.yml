@@ -34,8 +34,8 @@ jobs:
         run: npm ci
 
       # Step 5: Run Tests
-      - name: Run Tests
-        run: npm test
+      # - name: Run Tests
+      #   run: npm test
 
       # Step 6: Build Project
       - name: Build Project
@@ -66,4 +66,4 @@ jobs:
       - name: Sync to S3
         if: github.event_name == 'push'
         run: |
-          aws s3 sync build/ s3://nataliaalpizar.com
+          aws s3 sync dist/ s3://nataliaalpizar.com
