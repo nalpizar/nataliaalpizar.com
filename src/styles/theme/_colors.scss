@@ -1,0 +1,22 @@
+/**
+ * Color Tokens
+ * 
+ * This file contains the design tokens related to colors used throughout the application.
+ * These tokens include primary, secondary, and background colors, as well as text and link colors.
+ * Using design tokens helps maintain consistency and makes it easier to update styles globally.
+ */
+
+// Color Palette
+$color-cream: #fff6ed;
+$color-green: #184027;
+$color-purple: #aaaadd;
+$color-yellow: #eff483;
+$color-orange: #ed6b2e;
+
+// Text Colors
+$color-text-primary: $color-green;
+$color-text-secondary: $color-orange;
+
+// Background Colors
+$color-background-primary: $color-cream;
+$color-background-secondary: $color-orange;

@@ -1,27 +1,18 @@
-import './App.css'
+import { Fragment } from 'react/jsx-runtime';
+import Hero from './components/Hero/Hero';
 
 function App() {
-
   return (
-    <>
-      <section className="about-section">
-          <div className="profile-image">
-              <h1>Hi, I'm Natalia<span className='big'>.</span></h1>
-        
-              <h2>I'm a <span>Frontend Engineer</span></h2>
-
-              <p>
-                With 10 years of experience in creating user-centric, responsive,
-                and visually engaging interfaces. I specialize in building intuitive websites and
-                applications that prioritize performance, accessibility, and responsiveness. Currently based in Berlin.
-              </p>
-          </div>
-      </section>
-      <footer className="footer-section">
-        <p>© 2025 Natalia Alpizar | <a href="mailto:natalpizarm@gmail.com">natalpizarm@gmail.com</a></p>
-      </footer>
-    </>
-  )
+    <Fragment>
+      <Hero />
+      {/* <footer className="footer-section">
+        <p>
+          © 2025 Natalia Alpizar |{' '}
+          <a href="mailto:natalpizarm@gmail.com">natalpizarm@gmail.com</a>
+        </p>
+      </footer> */}
+    </Fragment>
+  );
 }
 
-export default App
+export default App;
