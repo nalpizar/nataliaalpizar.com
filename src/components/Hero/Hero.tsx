@@ -1,5 +1,5 @@
 import { Reveal } from '../utils/Reveal';
-import './Hero.scss';
+import './hero.scss';
 
 const Hero = () => {
   return (
