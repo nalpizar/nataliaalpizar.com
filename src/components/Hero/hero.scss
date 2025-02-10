@@ -1,56 +1,36 @@
 @use '../../styles/mixins' as *;
 
-html {
-  background-color: #fff6ed;
-}
-
-.headline-1 {
-  font-size: 5rem;
-  font-weight: 900;
-}
-
-.headline-1,
-.headline-2,
-p {
-  color: #184027;
-  margin: 16px 0;
-}
-
-p {
-  line-height: 26px;
-}
-
-.headline-2 {
-  font-weight: 400;
-  font-size: 2rem;
-}
-
-h2 span {
-  font-weight: 800;
-}
-
-span {
-  color: #ed6b2e;
-}
-
-.about-section {
+.hero {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  @include flex-container(column, center, center);
 
-.profile-image {
-  width: calc(100% - 40px);
-}
+  &__content {
+    width: calc(100% - 40px);
+  }
 
-.big {
-  font-size: 4rem;
+  &__headline-1 {
+    font-size: 5rem;
+    font-weight: 900;
+
+    &--big {
+      font-size: 4rem;
+    }
+  }
+
+  &__headline-2 {
+    font-weight: 400;
+    font-size: 2rem;
+
+    &--bold {
+      font-weight: 800;
+    }
+  }
 }
 
 @include media('medium') {
-  .profile-image {
-    width: 50%;
+  .hero {
+    &__content {
+      width: 50%;
+    }
   }
 }
