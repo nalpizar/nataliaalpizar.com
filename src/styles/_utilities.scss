@@ -1,0 +1,14 @@
+/* Import color (design tokens) */
+@use './theme/colors' as colors;
+
+.text--color-primary {
+  color: colors.$color-text-primary;
+}
+
+.text--color-secondary {
+  color: colors.$color-text-secondary;
+}
+
+.vertical--margin-16 {
+  margin: 16px 0;
+}

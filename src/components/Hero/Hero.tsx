@@ -3,20 +3,26 @@ import './hero.scss';
 
 const Hero = () => {
   return (
-    <section className="about-section">
-      <div className="profile-image">
+    <section className="hero">
+      <div className="hero__content">
         <Reveal>
-          <h1 className="headline-1">
-            Hi, I'm Natalia<span className="big">.</span>
+          <h1 className="hero__headline-1 text--color-primary vertical--margin-16">
+            Hi, I'm Natalia
+            <span className="hero__headline-1--big text--color-secondary">
+              .
+            </span>
           </h1>
         </Reveal>
         <Reveal>
-          <h2 className="headline-2">
-            I'm a <span className="">Frontend Engineer</span>
+          <h2 className="hero__headline-2 text--color-primary vertical--margin-16">
+            I'm a{' '}
+            <span className="hero__headline-2--bold text--color-secondary">
+              Frontend Engineer
+            </span>
           </h2>
         </Reveal>
         <Reveal>
-          <p>
+          <p className="text--color-primary vertical--margin-16">
             With 10 years of experience in creating user-centric, responsive,
             and visually engaging interfaces. I specialize in building intuitive
             websites and applications that prioritize performance,
