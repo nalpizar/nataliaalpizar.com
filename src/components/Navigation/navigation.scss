@@ -1,0 +1,31 @@
+@use '../../styles/theme/colors' as colors;
+
+.nav {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  &__logo {
+    color: colors.$color-green;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 10px 15px;
+    display: block;
+    &-circle {
+      font-size: 3rem;
+      line-height: 0;
+      color: colors.$color-text-secondary;
+    }
+  }
+
+  &__list {
+    &-item {
+      padding: 15px 20px;
+      border: 1px solid black;
+    }
+  }
+
+  &__link {
+    writing-mode: vertical-lr;
+    text-decoration: none;
+  }
+}

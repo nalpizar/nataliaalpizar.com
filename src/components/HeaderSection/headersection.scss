@@ -1,0 +1,28 @@
+@use '../../styles/theme/colors' as colors;
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: colors.$color-text-primary;
+  margin-bottom: 50px;
+  &__line {
+    width: 100%;
+    height: 2px;
+    background: colors.$color-background-green;
+  }
+
+  &__headline-3 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    margin: 0;
+  }
+
+  &--left {
+    flex-direction: row-reverse;
+  }
+
+  &--right {
+    flex-direction: row;
+  }
+}

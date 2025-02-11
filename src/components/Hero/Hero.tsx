@@ -8,9 +8,7 @@ const Hero = () => {
         <Reveal>
           <h1 className="hero__headline-1 text--color-primary vertical--margin-16">
             Hi, I'm Natalia
-            <span className="hero__headline-1--big text--color-secondary">
-              .
-            </span>
+            <span className="text--big-4 text--color-secondary">.</span>
           </h1>
         </Reveal>
         <Reveal>
