@@ -1,20 +1,57 @@
 @use './theme/colors' as colors;
+@use './mixins' as *;
 
 /* Forward mixins */
 @forward './mixins';
+
+/* Forward mixins */
+@forward './reset';
 
 /* Forward mixins */
 @forward './utilities';
 
 html {
   background-color: colors.$color-background-primary;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   font-family: 'Bitter', serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: rgb(255 246 237 / 25%);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
 }
 
 p {
   line-height: 26px;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+
+.section__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2.5%;
+}
+
+@include media('medium') {
+  .section__container {
+    padding: 80px;
+  }
 }

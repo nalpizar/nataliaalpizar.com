@@ -1,0 +1,56 @@
+@use '../../styles/theme/colors' as colors;
+
+.nav {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background: rgb(255 233 212 / 20%);
+  &__logo {
+    color: colors.$color-green;
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 28px 15px;
+    display: block;
+    &-circle {
+      font-size: 3rem;
+      line-height: 0;
+      color: colors.$color-text-secondary;
+    }
+  }
+
+  &__list {
+    &-item {
+      position: relative;
+      &:hover,
+      &--active {
+        background: #fff6ed;
+        &::after {
+          content: '';
+          display: block;
+          width: 2px;
+          height: 100%;
+          background: orange;
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: scaleY(1);
+          transform-origin: top;
+          transition: transform 0.3s ease;
+        }
+        .nav__link {
+          opacity: 1;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  &__link {
+    writing-mode: vertical-lr;
+    text-decoration: none;
+    color: colors.$color-text-primary;
+    opacity: 0.75;
+    padding: 15px 20px;
+    position: relative;
+  }
+}
