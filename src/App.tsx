@@ -4,11 +4,15 @@ import { About } from './sections/About/About';
 import { Projects } from './sections/Projects/Projects';
 import { Experience } from './sections/Experience/Experience';
 import { Contact } from './sections/Contact/Contact';
+import { Social } from './components/Social/Social';
 
 function App() {
   return (
     <Fragment>
       <main>
+        <header>
+          <Social></Social>
+        </header>
         <Hero />
         <About />
         <Projects />

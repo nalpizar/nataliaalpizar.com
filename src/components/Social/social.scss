@@ -1,0 +1,25 @@
+@use '../../styles/theme/colors' as colors;
+
+.social {
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__list-item {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__link {
+    display: flex;
+    text-indent: -9999px;
+    &:hover,
+    &:focus {
+      svg circle,
+      svg > path {
+        fill: colors.$color-orange;
+      }
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import { Fragment } from 'react/jsx-runtime';
 import { HeaderSectionProps } from './HeaderSection.types';
 import './headersection.scss';
+import { Reveal } from '../utils/Reveal';
 
 export function HeaderSection({
   title,
@@ -11,10 +12,12 @@ export function HeaderSection({
     <Fragment>
       <div className={`heading ${alignmentClass}`}>
         <div className="heading__line"></div>
-        <h3 className="heading__headline-3">
-          {title}
-          <span className="text--big-4 text--color-secondary">.</span>
-        </h3>
+        <Reveal>
+          <h3 className="heading__headline-3">
+            {title}
+            <span className="text--big-4 text--color-secondary">.</span>
+          </h3>
+        </Reveal>
       </div>
     </Fragment>
   );

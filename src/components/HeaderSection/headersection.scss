@@ -1,11 +1,12 @@
 @use '../../styles/theme/colors' as colors;
+@use '../../styles/mixins' as *;
 
 .heading {
   display: flex;
   align-items: center;
   gap: 30px;
   color: colors.$color-text-primary;
-  margin-bottom: 50px;
+  margin: 50px 0;
   &__line {
     width: 100%;
     height: 2px;
@@ -14,7 +15,7 @@
 
   &__headline-3 {
     font-weight: 900;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     margin: 0;
   }
 
@@ -24,5 +25,13 @@
 
   &--right {
     flex-direction: row;
+  }
+}
+
+@include media('medium') {
+  .heading {
+    &__headline-3 {
+      font-size: 3.5rem;
+    }
   }
 }
