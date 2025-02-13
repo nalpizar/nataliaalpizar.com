@@ -48,6 +48,8 @@ p {
   flex-direction: column;
   min-height: 100vh;
   padding: 2.5%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 @include media('medium') {

@@ -1,0 +1,26 @@
+.projects__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3.2rem;
+  gap: 3.2rem;
+
+  .project {
+    &__image {
+      background: #f8efe6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2rem;
+      padding: 2rem;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+
+      &-img {
+        position: absolute;
+        top: 30px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
