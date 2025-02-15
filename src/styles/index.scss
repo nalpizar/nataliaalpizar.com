@@ -53,6 +53,6 @@ p {
 
 @include media('medium') {
   .section__container {
-    padding: 80px;
+    padding: 80px 80px 0;
   }
 }
