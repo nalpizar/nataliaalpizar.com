@@ -1,29 +1,40 @@
-import { Fragment } from 'react/jsx-runtime';
-import { HeaderSection } from '../../components/HeaderSection/HeaderSection';
+import { Fragment, useState } from 'react';
+import CalendlyModal from '../../components/CalendyModal/CalendyModal';
+import MarqueeText from '../../components/MarqueeText/MarqueeText';
 import './contact.scss';
 
 export function Contact() {
+  const [showCalendly, setShowCalendly] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowCalendly(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowCalendly(false);
+  };
+
   return (
     <Fragment>
-      <section id="contact" className="section__container">
-        <HeaderSection title="Contact" textAlignment="right" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-          pharetra, nisl at lacinia fermentum, purus magna ultricies nunc, nec
-          tempus risus nunc non nunc. Donec sit amet nisi ut libero ultricies
-          facilisis. Nulla facilisi. Nam nec magna sit amet libero tempus
-          condimentum. Sed nec turpis nec libero tincidunt ultricies. Nulla
-          facilisi. In hac habitasse platea dictumst. Nullam et erat nec nunc
-          vehicula luctus. Nullam nec nunc ut sem lacinia fermentum. Nulla
-          facilisi. Nulla facilisi. Nullam nec nunc ut sem lacinia fermentum.
-          Nulla facilisi. Nulla facilisi. Nullam nec nunc ut sem lacinia
-          fermentum. Nulla facilisi. Nulla facilisi. Nullam nec nunc ut sem
-          lacinia fermentum. Nulla facilisi. Nulla facilisi. Nullam nec nunc ut
-          sem lacinia fermentum. Nulla facilisi. Nulla facilisi. Nullam nec nunc
-          ut sem lacinia fermentum. Nulla facilisi. Nulla facilisi. Nullam nec
-          nunc ut sem lacinia fermentum. Nulla facilisi. Nulla facilisi. Nullam
-          nec nunc ut sem lacinia fermentum. Nulla facilisi. Nulla facilisi.
+      <section id="contact" className="section__container contact">
+        <MarqueeText />
+        <p className="contact__text">
+          Feel free to connect with me on{' '}
+          <a
+            className="contact__text-link"
+            href="https://www.linkedin.com/in/natalia-alp%C3%ADzar-4a640b96/"
+          >
+            LinkedIn
+          </a>{' '}
+          or schedule a meeting if you'd like to chat!
         </p>
+        <button className="reveal-button" onClick={handleButtonClick}>
+          Schedule a Meeting
+        </button>
+        <CalendlyModal
+          isOpen={showCalendly}
+          onRequestClose={handleCloseModal}
+        />
       </section>
     </Fragment>
   );
