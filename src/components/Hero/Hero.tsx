@@ -3,7 +3,7 @@ import './hero.scss';
 
 const Hero = () => {
   return (
-    <section className="hero">
+    <section id="hero" className="hero">
       <div className="hero__content">
         <Reveal>
           <h1 className="hero__headline-1 text--color-primary vertical--margin-16">
