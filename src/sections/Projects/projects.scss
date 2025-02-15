@@ -15,12 +15,11 @@
       justify-content: center;
       border-radius: 2rem;
       padding: 2rem;
-      height: 200px;
+      height: 125px;
       max-width: 400px;
       overflow: hidden;
       position: relative;
       cursor: pointer;
-      /* margin: 0 auto;  Right now since is only 1 project*/
 
       &-img {
         position: absolute;
@@ -28,16 +27,14 @@
         border-radius: 10px;
       }
     }
+
     &__description {
       color: #184027;
       &-title {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 1.2rem;
-
-        flex-direction: column;
-        position: relative;
-        margin-bottom: 20px;
       }
 
       &-tech {
@@ -45,9 +42,6 @@
       }
 
       &-link {
-        position: absolute;
-        right: 15px;
-        top: 30px;
         &:hover,
         &:focus {
           svg > path {
@@ -58,13 +52,12 @@
     }
 
     &__title-text {
-      flex-shrink: 0;
       font-weight: 800;
       font-size: 20px;
-      margin: 20px 0 0;
     }
 
     &__title-title-line {
+      display: none;
       height: 2px;
       width: 100%;
       background: #184027;
@@ -79,19 +72,14 @@
     grid-gap: 3.2rem;
     gap: 3.2rem;
     .project {
-      &__description {
-        &-title {
-          flex-direction: row;
-          margin-bottom: 0;
-        }
-
-        &-link {
-          position: initial;
-        }
-      }
-
       &__title-text {
-        margin: 27px 0;
+        flex-shrink: 0;
+      }
+      &__image {
+        height: 200px;
+      }
+      &__title-title-line {
+        display: block;
       }
     }
   }

@@ -9,7 +9,10 @@ export function Social() {
         <ul className="social__list">
           <ShowVertical>
             <li className="social__list-item">
-              <a href="" className="social__link">
+              <a
+                href="https://www.linkedin.com/in/natalia-alp%C3%ADzar-4a640b96/"
+                className="social__link"
+              >
                 LinkedIn
                 <svg
                   width="24"
@@ -43,7 +46,7 @@ export function Social() {
               </a>
             </li>
             <li className="social__list-item">
-              <a href="" className="social__link">
+              <a href="https://github.com/nalpizar" className="social__link">
                 Github
                 <svg
                   width="24"
@@ -62,7 +65,7 @@ export function Social() {
               </a>
             </li>
             <li className="social__list-item">
-              <a href="" className="social__link">
+              <a href="https://codepen.io/nalpizar" className="social__link">
                 Codepen
                 <svg
                   width="24"
