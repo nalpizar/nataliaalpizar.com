@@ -1,9 +1,11 @@
 import { Reveal } from '../utils/Reveal';
+import GridBackground from '../GridBackground/GridBackground';
 import './hero.scss';
 
 const Hero = () => {
   return (
     <section id="hero" className="hero">
+      <GridBackground></GridBackground>
       <div className="hero__content">
         <Reveal>
           <h1 className="hero__headline-1 text--color-primary vertical--margin-16">
