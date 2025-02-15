@@ -1,0 +1,28 @@
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #e8e1fd;
+  color: #184027;
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+}
+
+.marquee-content span {
+  font-size: 6rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .marquee-content span {
+    font-size: 3rem;
+  }
+}
