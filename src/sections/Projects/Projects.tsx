@@ -10,9 +10,9 @@ import { Reveal } from '../../components/utils/Reveal';
 export function Projects() {
   return (
     <Fragment>
-      <section id="projects" className="section__container">
+      <section id="projects" className="section__container text--color-primary">
         <HeaderSection title="Projects" textAlignment="right" />
-        <div className="projects__container">
+        <div className="projects__container grid--2-cols">
           <div className="project">
             <div className="project__image">
               <motion.img
@@ -27,7 +27,9 @@ export function Projects() {
             <div className="project__description">
               <Reveal width="100%">
                 <div className="project__description-title">
-                  <h4 className="project__title-text">New Home Source</h4>
+                  <h4 className="project__title-text heading--4">
+                    New Home Source
+                  </h4>
                   <div className="project__title-title-line"></div>
                   <a
                     target="_blank"
@@ -50,7 +52,7 @@ export function Projects() {
                 </div>
               </Reveal>
               <Reveal>
-                <div className="project__description-tech">
+                <div className="text--color-secondary">
                   Redux - JavaScript - SASS - Storybook - Design Tokens
                 </div>
               </Reveal>
@@ -80,7 +82,7 @@ export function Projects() {
             <div className="project__description">
               <Reveal width="100%">
                 <div className="project__description-title">
-                  <h4 className="project__title-text">
+                  <h4 className="project__title-text heading--4">
                     Carbon Emissions Visualization
                   </h4>
                   <div className="project__title-title-line"></div>
@@ -108,7 +110,7 @@ export function Projects() {
                 </div>
               </Reveal>
               <Reveal>
-                <div className="project__description-tech">
+                <div className="text--color-secondary">
                   React - Recharts - TypeScript
                 </div>
               </Reveal>

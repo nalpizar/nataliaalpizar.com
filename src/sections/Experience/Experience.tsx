@@ -6,15 +6,20 @@ import { Reveal } from '../../components/utils/Reveal';
 export function Experience() {
   return (
     <Fragment>
-      <section id="experience" className="section__container">
+      <section
+        id="experience"
+        className="section__container text--color-primary"
+      >
         <HeaderSection title="Experience" textAlignment="left" />
         <div className="experience">
           <div className="experience__container">
             <Reveal width="100%">
               <div className="experience__headline">
-                <h4>Plan A</h4>
+                <h4 className="heading--4">Plan A</h4>
                 <p>2025</p>
-                <h5 className="text--color-secondary">Frontend Engineer</h5>
+                <h5 className="heading--4 text--color-secondary">
+                  Frontend Engineer
+                </h5>
                 <p>Berlin, Germany</p>
               </div>
             </Reveal>
@@ -26,7 +31,7 @@ export function Experience() {
               </p>
             </Reveal>
             <Reveal>
-              <ul className="about__column-list">
+              <ul className="grid-col-list">
                 <li>React</li>
                 <li>TypeScript</li>
                 <li>Recharts</li>
@@ -36,9 +41,13 @@ export function Experience() {
           <div className="experience__container">
             <Reveal width="100%">
               <div className="experience__headline">
-                <h4>Zonda (Builder Homesite Inc was adquired by Zonda)</h4>
+                <h4 className="heading--4">
+                  Zonda (BHI was adquired by Zonda)
+                </h4>
                 <p>2024</p>
-                <h5 className="text--color-secondary">Frontend Engineer</h5>
+                <h5 className="heading--4 text--color-secondary">
+                  Frontend Engineer
+                </h5>
                 <p>Remote</p>
               </div>
             </Reveal>
@@ -51,7 +60,7 @@ export function Experience() {
               </p>
             </Reveal>
             <Reveal>
-              <ul className="about__column-list">
+              <ul className="grid-col-list">
                 <li>Storybook</li>
                 <li>Design Tokens</li>
                 <li>Redux</li>
@@ -63,9 +72,11 @@ export function Experience() {
           <div className="experience__container">
             <Reveal width="100%">
               <div className="experience__headline">
-                <h4>Builder Homesite Inc</h4>
+                <h4 className="heading--4">Builder Homesite Inc</h4>
                 <p>2020 - 2024</p>
-                <h5 className="text--color-secondary">Frontend Engineer</h5>
+                <h5 className="heading--4 text--color-secondary">
+                  Frontend Engineer
+                </h5>
                 <p>Remote</p>
               </div>
             </Reveal>
@@ -80,7 +91,7 @@ export function Experience() {
               </p>
             </Reveal>
             <Reveal>
-              <ul className="about__column-list">
+              <ul className="grid-col-list">
                 <li>React</li>
                 <li>Redux</li>
                 <li>TypeScript</li>
@@ -95,9 +106,9 @@ export function Experience() {
           </div>
           <div className="experience__container">
             <div className="experience__headline">
-              <h4>Builder Home Site Inc</h4>
+              <h4 className="heading--4">Builder Home Site Inc</h4>
               <p>2014 - 2020</p>
-              <h5 className="text--color-secondary">UI Engineer</h5>
+              <h5 className="heading--4 text--color-secondary">UI Engineer</h5>
               <p>San José, Costa Rica</p>
             </div>
             <p className="experience__description">
@@ -106,7 +117,7 @@ export function Experience() {
               responsive design, and accessibility. Led the UI Engineering team,
               developing strategies to deliver various projects and objectives.
             </p>
-            <ul className="about__column-list">
+            <ul className="grid-col-list">
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>

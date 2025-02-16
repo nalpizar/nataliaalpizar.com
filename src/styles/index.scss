@@ -51,6 +51,26 @@ p {
   margin: 0 auto;
 }
 
+.footer {
+  background: #184027;
+  color: #fff6ed;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__text {
+    font-size: 12px;
+    margin: 0;
+
+    &-link {
+      color: #fff6ed;
+      font-weight: 600;
+    }
+  }
+}
+
 @include media('medium') {
   .section__container {
     padding: 80px 80px 0;

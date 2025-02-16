@@ -1,5 +1,4 @@
 import { Fragment } from 'react/jsx-runtime';
-import './about.scss';
 import { HeaderSection } from '../../components/HeaderSection/HeaderSection';
 import { Social } from '../../components/Social/Social';
 import { Reveal } from '../../components/utils/Reveal';
@@ -7,9 +6,9 @@ import { Reveal } from '../../components/utils/Reveal';
 export function About() {
   return (
     <Fragment>
-      <section id="about" className="section__container">
+      <section id="about" className="section__container text--color-primary">
         <HeaderSection title="About" textAlignment="left" />
-        <div className="about">
+        <div className="about grid--2-cols">
           <div className="about__column">
             <Reveal>
               <p>
@@ -41,8 +40,8 @@ export function About() {
               </p>
             </Reveal>
             <Reveal>
-              <div className="about__column-links">
-                <p>
+              <div className="align--center-gap-10">
+                <p className="align--center-gap-10 text--color-secondary text--600">
                   My links{' '}
                   <svg
                     stroke="#ed6b2e"
@@ -64,7 +63,7 @@ export function About() {
           <div className="about__column">
             <Reveal>
               <div>
-                <h4 className="about__column-title">
+                <h4 className="align--center-gap-10 heading--4">
                   <svg
                     stroke="#ed6b2e"
                     fill="#ed6b2e"
@@ -78,7 +77,7 @@ export function About() {
                   </svg>
                   Use at work
                 </h4>
-                <ul className="about__column-list">
+                <ul className="grid-col-list">
                   <li>JavaScript</li>
                   <li>TypeScript</li>
                   <li>React</li>
@@ -101,7 +100,7 @@ export function About() {
             </Reveal>
             <Reveal>
               <div>
-                <h4 className="about__column-title">
+                <h4 className="align--center-gap-10 heading--4">
                   <svg
                     stroke="#ed6b2e"
                     fill="#ed6b2e"
@@ -115,7 +114,7 @@ export function About() {
                   </svg>
                   Use for fun
                 </h4>
-                <ul className="about__column-list">
+                <ul className="grid-col-list">
                   <li>Framer motion</li>
                   <li>Tailwind</li>
                   <li>AWS</li>
