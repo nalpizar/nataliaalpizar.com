@@ -1,6 +1,8 @@
 /* Import color (design tokens) */
 @use './theme/colors' as colors;
 
+@use './mixins' as *;
+
 .text--color-primary {
   color: colors.$color-text-primary;
 }
@@ -9,11 +11,58 @@
   color: colors.$color-text-secondary;
 }
 
+.text--600 {
+  font-weight: 600;
+}
+
 .text--big-4 {
   font-size: 4rem;
   line-height: 1rem;
 }
 
-.vertical--margin-16 {
-  margin: 16px 0;
+.heading--4 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.align--center-gap-10 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.align--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical--margin-35 {
+  margin: 35px 0;
+}
+
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+
+.grid-col-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  li {
+    background: rgb(232, 225, 253);
+    border-radius: 20px;
+    padding: 10px;
+  }
+}
+
+@include media('medium') {
+  .grid--2-cols {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem;
+    gap: 3.2rem;
+  }
 }

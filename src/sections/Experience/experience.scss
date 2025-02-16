@@ -1,6 +1,4 @@
 .experience {
-  color: #184027;
-
   &__container {
     position: relative;
     padding-bottom: 40px;
@@ -33,14 +31,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-bottom: 2rem;
-    padding: 1rem; // Add padding to the headline elements
-    box-sizing: border-box; // Ensure padding and border are included in the width
+    padding: 1rem 0;
+    box-sizing: border-box;
 
     & > * {
       width: 100%;
       box-sizing: border-box;
       margin: 0;
-      font-size: 18px;
     }
 
     & > *:nth-child(1),

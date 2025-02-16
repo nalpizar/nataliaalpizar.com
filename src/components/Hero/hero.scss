@@ -8,6 +8,11 @@
   &__content {
     width: calc(100% - 40px);
     max-width: 650px;
+
+    &-text {
+      font-size: 20px;
+      font-weight: 300;
+    }
   }
 
   &__headline-1 {
@@ -16,7 +21,7 @@
   }
 
   &__headline-2 {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.5rem;
 
     &--bold {
