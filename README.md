@@ -11,8 +11,6 @@ Welcome to my personal portfolio website built with React, TypeScript, and Vite.
 - [Folder Structure](#folder-structure)
 - [Infrastructure](#infrastructure)
 - [CI/CD Pipeline](#cicd-pipeline)
-- [Expanding the ESLint Configuration](#expanding-the-eslint-configuration)
-- [License](#license)
 
 ## Introduction
 
@@ -97,3 +95,29 @@ To get started with this project, follow these steps:
 ├── README.md
 └── tsconfig.json
 ```
+
+## Infrastructure
+
+The infrastructure for this project is managed using Terraform. The following AWS resources are configured in the main.tf file:
+
+- **S3**: For storing and serving static assets.
+- **Route 53**: For DNS management.
+- **CloudFront**: For content delivery and caching.
+- **ACM (AWS Certificate Manager)**: For managing SSL/TLS certificates.
+- **Other AWS Resources**: Additional resources as needed for the project.
+
+You can find the Terraform configuration in the main.tf file.
+
+## CI/CD Pipeline
+
+This project uses GitHub Actions for continuous integration and deployment. The pipeline is defined in the main.yml file located in the workflows directory. The pipeline includes the following steps:
+
+- **Trigger**: The pipeline is triggered on push and pull request events to the main branch.
+- **Checkout Repository**: Checks out the repository to the GitHub runner.
+- **Set up Node.js**: Sets up the Node.js environment.
+- **Install Dependencies**: Installs the project dependencies using npm install.
+- **Run Tests**: Runs the test suite using npm test.
+- **Build Project**: Builds the project for production using npm run build.
+- **Deploy**: Deploys the built project to the specified hosting environment (e.g., AWS S3, CloudFront).
+
+You can find the GitHub Actions configuration in the main.yml file.
