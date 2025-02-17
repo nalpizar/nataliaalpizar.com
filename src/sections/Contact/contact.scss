@@ -60,7 +60,7 @@
   padding: 20px;
   font-size: 1rem;
   color: #184027;
-  background-color: #e8e1fd;
+  background-color: #eff483;
   border: 2px solid #184027;
   border-radius: 35px;
   width: 200px;
@@ -70,7 +70,6 @@
     transform 0.3s;
 
   &:hover {
-    background-color: #eff483;
     transform: scale(1.05);
   }
 

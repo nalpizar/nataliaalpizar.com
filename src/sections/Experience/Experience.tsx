@@ -55,8 +55,8 @@ export function Experience() {
               <p className="experience__description">
                 Worked on the rebrand project following the company's
                 acquisition, implementing Design Tokens and Style Dictionary for
-                consistency. Mentored developers on design system best practices
-                while collaborating with the team.
+                consistency. Implement design system best practices while
+                collaborating with the team.
               </p>
             </Reveal>
             <Reveal>
