@@ -1,7 +1,7 @@
 @use '../../styles/theme/colors' as colors;
 
 .nav {
-  height: 100vh;
+  height: calc(100vh - 150px);
   position: sticky;
   top: 0;
   background: rgb(255 233 212 / 20%);

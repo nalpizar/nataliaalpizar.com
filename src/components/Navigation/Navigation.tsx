@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import { ShowHorizontal } from '../utils/ShowHorizontal';
 import { useActiveNavItem } from '../../hooks/useActiveNavItem';
 import './navigation.scss';
@@ -22,13 +23,13 @@ export function Navigation() {
                 key={id}
                 className={`nav__list-item ${activeItem === id ? 'nav__list-item--active' : ''}`}
               >
-                <a
+                <Link
                   className="nav__link"
-                  href={`#${id}`}
+                  to={`/${id}`}
                   onClick={() => handleItemClick(id)}
                 >
                   {id.charAt(0).toUpperCase() + id.slice(1)}
-                </a>
+                </Link>
               </li>
             ))}
           </ShowHorizontal>

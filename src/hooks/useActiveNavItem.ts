@@ -1,42 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useSectionObserver } from './useSectionObserver';
 
-export const useActiveNavItem = (sectionIds: string[]) => {
-  const [activeItem, setActiveItem] = useState<string>('');
+export function useActiveNavItem(sectionIds: string[]) {
+  const [activeItem, setActiveItem] = useState<string | null>(null);
 
-  const handleItemClick = (item: string) => {
-    setActiveItem(item);
+  useSectionObserver(sectionIds, setActiveItem);
+
+  const handleItemClick = (id: string) => {
+    setActiveItem(id);
   };
 
-  useEffect(() => {
-    const sections = sectionIds.map((id) => document.getElementById(id));
-    const options = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.5,
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveItem(entry.target.id);
-        }
-      });
-    }, options);
-
-    sections.forEach((section) => {
-      if (section) {
-        observer.observe(section);
-      }
-    });
-
-    return () => {
-      sections.forEach((section) => {
-        if (section) {
-          observer.unobserve(section);
-        }
-      });
-    };
-  }, [sectionIds]);
-
   return { activeItem, handleItemClick };
-};
+}
