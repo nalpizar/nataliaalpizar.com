@@ -1,21 +1,23 @@
-@use '../../styles/theme/colors' as colors;
-@use '../../styles/mixins' as *;
+@use '../../styles/mixins' as mixins;
+
+// Import CSS variables
+@import '../../styles/variables.css';
 
 .heading {
   display: flex;
   align-items: center;
-  gap: 30px;
-  color: colors.$color-text-primary;
-  margin: 20px 0;
+  gap: mixins.px-to-rem(30px);
+  color: var(--color-text-primary);
+  margin: mixins.px-to-rem(20px) 0;
   &__line {
     width: 100%;
-    height: 2px;
-    background: colors.$color-background-green;
+    height: mixins.px-to-rem(2px);
+    background: var(--color-background-green);
   }
 
   &__headline-3 {
     font-weight: 900;
-    font-size: 2rem;
+    font-size: mixins.px-to-rem(32px);
     margin: 0;
   }
 
@@ -28,11 +30,11 @@
   }
 }
 
-@include media('medium') {
+@include mixins.media('medium') {
   .heading {
-    margin: 50px 0;
+    margin: mixins.px-to-rem(50px) 0;
     &__headline-3 {
-      font-size: 3.5rem;
+      font-size: mixins.px-to-rem(56px);
     }
   }
 }

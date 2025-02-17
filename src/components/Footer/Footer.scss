@@ -1,0 +1,24 @@
+@use '../../styles/mixins' as mixins;
+
+// Import CSS variables
+@import '../../styles/variables.css';
+
+.footer {
+  background: var(--color-background-green);
+  color: var(--color-text-light);
+  height: mixins.px-to-rem(150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__text {
+    font-size: mixins.px-to-rem(12px);
+    margin: 0;
+
+    &-link {
+      color: var(--color-text-light);
+      font-weight: 600;
+    }
+  }
+}

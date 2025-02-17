@@ -1,20 +1,24 @@
-@use '../../styles/theme/colors' as colors;
+// Import mixins
+@use '../../styles/mixins' as mixins;
+
+// Import CSS variables
+@import '../../styles/variables.css';
 
 .nav {
-  height: calc(100vh - 150px);
+  height: calc(100vh - mixins.px-to-rem(150px));
   position: sticky;
   top: 0;
   background: rgb(255 233 212 / 20%);
   &__logo {
-    color: colors.$color-green;
+    color: var(--color-text-primary);
     font-weight: 900;
-    font-size: 1.5rem;
-    margin: 28px 15px;
+    font-size: mixins.px-to-rem(24px);
+    margin: mixins.px-to-rem(28px) mixins.px-to-rem(15px);
     display: block;
     &-circle {
-      font-size: 3rem;
+      font-size: mixins.px-to-rem(48px);
       line-height: 0;
-      color: colors.$color-text-secondary;
+      color: var(--color-text-secondary);
     }
   }
 
@@ -23,13 +27,13 @@
       position: relative;
       &:hover,
       &--active {
-        background: #fff6ed;
+        background: var(--color-background-light);
         &::after {
           content: '';
           display: block;
-          width: 2px;
+          width: mixins.px-to-rem(2px);
           height: 100%;
-          background: orange;
+          background: var(--color-background-orange);
           position: absolute;
           top: 0;
           right: 0;
@@ -48,10 +52,10 @@
   &__link {
     writing-mode: vertical-lr;
     text-decoration: none;
-    color: colors.$color-text-primary;
+    color: var(--color-text-primary);
     opacity: 0.75;
-    padding: 15px 0;
-    width: 58px;
+    padding: mixins.px-to-rem(15px) 0;
+    width: mixins.px-to-rem(58px);
     position: relative;
     display: flex;
     align-items: center;

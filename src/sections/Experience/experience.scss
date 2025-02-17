@@ -1,15 +1,20 @@
+@use '../..//styles/mixins' as mixins;
+
+// Import CSS variables
+@import '../../styles/variables.css';
+
 .experience {
   &__container {
     position: relative;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
+    padding-bottom: mixins.px-to-rem(40px);
+    margin-bottom: mixins.px-to-rem(40px);
 
     &::after {
       content: '';
       display: block;
       width: 100%;
-      height: 2px;
-      background-color: #184027;
+      height: mixins.px-to-rem(2px);
+      background-color: var(--color-background-green);
       position: absolute;
       bottom: 0;
       left: 0;

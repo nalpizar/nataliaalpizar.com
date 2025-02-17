@@ -1,14 +1,15 @@
-@use '../../styles/theme/colors' as colors;
+// Import CSS variables
+@import '../../styles/variables.css';
 
 .social {
   &__list {
     display: flex;
-    gap: 20px;
+    gap: mixins.px-to-rem(20px);
   }
 
   &__list-item {
-    width: 24px;
-    height: 24px;
+    width: mixins.px-to-rem(24px);
+    height: mixins.px-to-rem(24px);
   }
 
   &__link {
@@ -18,7 +19,7 @@
     &:focus {
       svg circle,
       svg > path {
-        fill: colors.$color-orange;
+        fill: var(--color-background-orange);
       }
     }
   }

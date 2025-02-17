@@ -1,68 +1,81 @@
-/* Import color (design tokens) */
-@use './theme/colors' as colors;
+// Import mixins
+@use './mixins' as mixins;
 
-@use './mixins' as *;
+// Import CSS variables
+@import './variables.css';
 
+// Text Utilities
+// --------------------------------------------------
+
+/* Text Colors */
 .text--color-primary {
-  color: colors.$color-text-primary;
+  color: var(--color-text-primary);
 }
 
 .text--color-secondary {
-  color: colors.$color-text-secondary;
+  color: var(--color-text-secondary);
 }
 
+/* Text Weights */
 .text--600 {
   font-weight: 600;
 }
 
+/* Text Sizes */
 .text--big-4 {
-  font-size: 4rem;
-  line-height: 1rem;
+  font-size: mixins.px-to-rem(64px);
+  line-height: mixins.px-to-rem(16px);
 }
 
 .heading--4 {
-  font-size: 20px;
+  font-size: mixins.px-to-rem(20px);
   font-weight: 800;
 }
 
+// Alignment Utilities
+// --------------------------------------------------
+
+/* Flex Alignment */
 .align--center-gap-10 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: mixins.px-to-rem(10px);
 }
 
-.align--center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+// Spacing Utilities
+// --------------------------------------------------
 
+/* Verical Margins */
 .vertical--margin-35 {
-  margin: 35px 0;
+  margin: mixins.px-to-rem(35px) 0;
 }
 
+// Layout Utilities
+// --------------------------------------------------
+
+/* Grid Layout */
 .grid--2-cols {
   display: grid;
   grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  gap: 2rem;
+  grid-gap: mixins.px-to-rem(32px);
+  gap: mixins.px-to-rem(32px);
 }
 
 .grid-col-list {
   display: flex;
-  gap: 10px;
+  gap: mixins.px-to-rem(10px);
   flex-wrap: wrap;
   li {
-    background: rgb(232, 225, 253);
-    border-radius: 20px;
-    padding: 10px;
+    background: var(--color-background-purple);
+    border-radius: mixins.px-to-rem(20px);
+    padding: mixins.px-to-rem(10px);
   }
 }
 
-@include media('medium') {
+@include mixins.media('medium') {
   .grid--2-cols {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3.2rem;
-    gap: 3.2rem;
+    grid-gap: mixins.px-to-rem(50px);
+    gap: mixins.px-to-rem(50px);
   }
 }
