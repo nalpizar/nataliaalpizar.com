@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 /**
  * Mixin for creating a flex container with customizable properties.
  * 
@@ -42,4 +44,20 @@
       @content;
     }
   }
+}
+
+/**
+ * Function for converting pixel values to rem units based on a base font size.
+ * 
+ * @param {Number} $px-value - The pixel value to convert.
+ * @param {Number} $base-font-size - The base font size to use for conversion (default: 16px).
+ * @return {String} - The converted rem value.
+ * 
+ * @example
+ * .example-class {
+ *   font-size: px-to-rem(32px); // Converts 32px to 2rem
+ * }
+ */
+@function px-to-rem($px-value, $base-font-size: 16px) {
+  @return #{math.div($px-value, $base-font-size)}rem;
 }

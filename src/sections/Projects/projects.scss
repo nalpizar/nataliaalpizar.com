@@ -1,21 +1,23 @@
-@use '../../styles/theme/colors' as colors;
-@use '../..//styles/mixins' as *;
+@use '../..//styles/mixins' as mixins;
+
+// Import CSS variables
+@import '../../styles/variables.css';
 
 .projects__container {
   .project {
     &__image {
-      background: #f8efe6;
-      border-radius: 2rem;
-      padding: 2rem;
-      height: 125px;
-      max-width: 400px;
+      background: var(--color-background-light-200);
+      border-radius: mixins.px-to-rem(32px);
+      padding: mixins.px-to-rem(32px);
+      height: mixins.px-to-rem(125px);
+      max-width: mixins.px-to-rem(400px);
       overflow: hidden;
       position: relative;
 
       &-img {
         position: absolute;
-        top: 30px;
-        border-radius: 10px;
+        top: mixins.px-to-rem(30px);
+        border-radius: mixins.px-to-rem(10px);
       }
     }
 
@@ -24,14 +26,14 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 1.2rem;
+        gap: mixins.px-to-rem(20px);
       }
 
       &-link {
         &:hover,
         &:focus {
           svg > path {
-            fill: colors.$color-orange;
+            fill: var(--color-background-orange);
           }
         }
       }
@@ -39,22 +41,22 @@
 
     &__title-title-line {
       display: none;
-      height: 2px;
+      height: mixins.px-to-rem(2px);
       width: 100%;
-      background: colors.$color-background-green;
+      background: var(--color-background-green);
       opacity: 0.75;
     }
   }
 }
 
-@include media('medium') {
+@include mixins.media('medium') {
   .projects__container {
     .project {
       &__title-text {
         flex-shrink: 0;
       }
       &__image {
-        height: 200px;
+        height: mixins.px-to-rem(200px);
       }
       &__title-title-line {
         display: block;

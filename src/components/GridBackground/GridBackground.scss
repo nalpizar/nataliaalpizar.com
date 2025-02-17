@@ -1,18 +1,24 @@
+// Import mixins
+@use '../../styles/mixins' as mixins;
+
+// Import CSS variables
+@import '../../styles/variables.css';
+
 .grid-background {
   position: absolute;
   top: 0;
   right: 0;
-  width: calc(100% - 60px);
+  width: calc(100% - mixins.px-to-rem(60px));
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(75px, 1fr));
-  gap: 1px;
+  grid-template-columns: repeat(auto-fill, minmax(mixins.px-to-rem(75px), 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(mixins.px-to-rem(75px), 1fr));
+  gap: mixins.px-to-rem(1px);
 }
 
 .grid-item {
   width: 100%;
   height: 100%;
-  background-color: #e8e1fd;
+  background-color: var(--color-background-purple);
   transition: background-color 0.3s ease;
 }

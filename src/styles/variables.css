@@ -1,0 +1,22 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-primary: #184027;
+  --color-secondary: #ed6b2e;
+  --color-background-light: #fff6ed;
+  --color-background-light-200: #f8efe6;
+  --color-background-orange: #ed6b2e;
+  --color-background-yellow: #eff483;
+  --color-background-green: #184027;
+  --color-background-purple: #e8e1fd;
+  --color-text-primary: #184027;
+  --color-text-secondary: #ed6b2e;
+  --color-text-light: #fff6ed;
+  --font-base: 16px;
+  --font-family: 'Bitter', sans-serif;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+}

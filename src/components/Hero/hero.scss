@@ -1,29 +1,29 @@
-@use '../../styles/mixins' as *;
+@use '../../styles/mixins' as mixins;
 
 .hero {
   min-height: 100vh;
-  @include flex-container(column, center, center);
-  margin-top: -80px;
+  @include mixins.flex-container(column, center, center);
+  margin-top: mixins.px-to-rem(-80px);
 
   &__content {
-    width: calc(100% - 40px);
-    max-width: 650px;
+    width: calc(100% - mixins.px-to-rem(40px));
+    max-width: mixins.px-to-rem(650px);
 
     &-text {
-      font-size: 20px;
+      font-size: mixins.px-to-rem(20px);
       font-weight: 300;
-      line-height: 35px;
+      line-height: mixins.px-to-rem(35px);
     }
   }
 
   &__headline-1 {
-    font-size: 3.5rem;
+    font-size: mixins.px-to-rem(56px);
     font-weight: 900;
   }
 
   &__headline-2 {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: mixins.px-to-rem(24px);
 
     &--bold {
       font-weight: 800;
@@ -31,10 +31,10 @@
   }
 }
 
-@include media('medium') {
+@include mixins.media('medium') {
   .hero {
     &__headline-1 {
-      font-size: 5rem;
+      font-size: mixins.px-to-rem(80px);
     }
 
     &__content {

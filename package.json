@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:tokens": "style-dictionary build --config style-dictionary.config.json"
   },
   "dependencies": {
     "framer-motion": "^12.4.1",
@@ -30,6 +31,7 @@
     "globals": "^15.14.0",
     "prettier": "^3.5.0",
     "sass-embedded": "^1.83.4",
+    "style-dictionary": "^4.3.3",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
     "vite": "^6.1.0"

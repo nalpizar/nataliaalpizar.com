@@ -1,5 +1,4 @@
-@use './theme/colors' as colors;
-@use './mixins' as *;
+@use './mixins' as mixins;
 
 /* Forward mixins */
 @forward './mixins';
@@ -10,14 +9,17 @@
 /* Forward mixins */
 @forward './utilities';
 
+// Import CSS variables
+@import '../styles/variables.css';
+
 html {
-  background-color: colors.$color-background-primary;
+  background-color: var(--color-background-light);
   scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: 'Bitter', serif;
+  font-family: var(--font-family);
   scroll-behavior: smooth;
 }
 
@@ -27,19 +29,19 @@ header {
   position: sticky;
   top: 0;
   z-index: 20;
-  height: 80px;
+  height: mixins.px-to-rem(80px);
   display: flex;
   align-items: center;
-  padding: 0 40px;
+  padding: 0 mixins.px-to-rem(40px);
 }
 
 p {
-  line-height: 26px;
+  line-height: mixins.px-to-rem(26px);
 }
 
 .home {
   display: grid;
-  grid-template-columns: 60px 1fr;
+  grid-template-columns: mixins.px-to-rem(60px) 1fr;
 }
 
 .section__container {
@@ -47,33 +49,13 @@ p {
   justify-content: center;
   flex-direction: column;
   padding: 5%;
-  max-width: 960px;
+  max-width: mixins.px-to-rem(960px);
   margin: 0 auto;
-  scroll-margin-top: 80px;
+  scroll-margin-top: mixins.px-to-rem(80px);
 }
 
-.footer {
-  background: #184027;
-  color: #fff6ed;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  &__text {
-    font-size: 12px;
-    margin: 0;
-
-    &-link {
-      color: #fff6ed;
-      font-weight: 600;
-    }
-  }
-}
-
-@include media('medium') {
+@include mixins.media('medium') {
   .section__container {
-    padding: 80px 80px 0;
+    padding: mixins.px-to-rem(80px) mixins.px-to-rem(80px) 0;
   }
 }
