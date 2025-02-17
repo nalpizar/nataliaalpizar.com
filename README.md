@@ -8,7 +8,6 @@ Welcome to my personal portfolio website built with React, TypeScript, and Vite.
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Scripts](#scripts)
-- [Folder Structure](#folder-structure)
 - [Infrastructure](#infrastructure)
 - [CI/CD Pipeline](#cicd-pipeline)
 
@@ -23,6 +22,8 @@ This portfolio website is designed to provide an overview of my professional bac
 - **Vite**: A fast build tool and development server.
 - **Framer Motion**: A library for animations and gestures in React.
 - **Responsive Design**: Optimized for various screen sizes and devices.
+- **Style Dictionary**: A tool for managing design tokens.
+- **Design Tokens**: Centralized design values for colors, typography, spacing, etc.
 
 ## Getting Started
 
@@ -65,36 +66,8 @@ To get started with this project, follow these steps:
 - `npm run build`: Builds the project for production.
 - `npm run preview`: Previews the production build.
 - `npm run lint`: Runs ESLint to check for linting errors.
-
-## Folder Structure
-
-```plaintext
-├── public
-│   └── index.html
-├── src
-│   ├── assets
-│   ├── components
-│   ├── hooks
-│   ├── pages
-│   ├── sections
-│   ├── styles
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── vite-env.d.ts
-├── infra
-│   └── states
-│       └── nataliaalpizar.com
-│           └── main.tf
-├── .github
-│   └── workflows
-│       └── main.yml
-├── .eslintrc.cjs
-├── .gitignore
-├── index.html
-├── package.json
-├── README.md
-└── tsconfig.json
-```
+- `npm run lint`: Runs ESLint to check for linting errors.
+- `npm run build:tokens`: Build design tokens.
 
 ## Infrastructure
 

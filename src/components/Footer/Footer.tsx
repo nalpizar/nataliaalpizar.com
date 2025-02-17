@@ -21,6 +21,17 @@ const Footer = () => {
           LinkedIn
         </a>
       </p>
+      <p className="footer__text">
+        Look how I made my implementation here:{' '}
+        <a
+          className="footer__text-link"
+          href="https://github.com/nalpizar/nataliaalpizar.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub Repository
+        </a>
+      </p>
     </footer>
   );
 };
