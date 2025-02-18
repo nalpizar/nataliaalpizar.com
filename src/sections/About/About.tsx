@@ -12,19 +12,19 @@ export function About() {
           <div className="about__column">
             <Reveal>
               <p>
-                Hey there! I’m Natalia, a frontend engineer originally from
-                Costa Rica, now based in Berlin since 2022. I’m loving the fresh
-                experiences this vibrant city has brought into my life!
+                A little bit about me... I'm originally from Costa Rica, now
+                based in Berlin since 2022. I’m loving the fresh experiences
+                this vibrant city has brought into my life!
               </p>
             </Reveal>
             <Reveal>
               <p>
-                With over 10 years of experience, I’m dedicated to creating
-                intuitive, responsive, and inclusive websites and apps. I focus
-                on making sure every user has a seamless experience, no matter
-                their device or needs. I’m also well-versed in A/B testing,
-                helping teams rapidly iterate and make data-driven decisions to
-                enhance UX.
+                Throughout my professional journey, I’ve been dedicated to
+                creating intuitive, responsive, and inclusive websites and apps.
+                I focus on making sure every user has a seamless experience, no
+                matter their device or needs. I’m also well-versed in A/B
+                testing, helping teams rapidly iterate and make data-driven
+                decisions to enhance UX.
               </p>
             </Reveal>
             <Reveal>
