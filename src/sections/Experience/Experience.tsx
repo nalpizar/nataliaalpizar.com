@@ -42,7 +42,7 @@ export function Experience() {
             <Reveal width="100%">
               <div className="experience__headline">
                 <h4 className="heading--4">
-                  Zonda (BHI was adquired by Zonda)
+                  Zonda (BHI was acquired by Zonda)
                 </h4>
                 <p>2024</p>
                 <h5 className="heading--4 text--color-secondary">

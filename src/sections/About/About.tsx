@@ -116,6 +116,7 @@ export function About() {
                 </h4>
                 <ul className="grid-col-list">
                   <li>Framer motion</li>
+                  <li>Vue</li>
                   <li>Tailwind</li>
                   <li>AWS</li>
                   <li>Next</li>
